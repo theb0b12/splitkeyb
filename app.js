@@ -130,3 +130,28 @@ document.addEventListener('DOMContentLoaded', () => {
     // Run on page load
     saveAndRenderCart();
 });
+
+document.querySelectorAll('.image-slider').forEach(slider => {
+        const images = slider.querySelectorAll('.slider-img');
+        const nextBtn = slider.querySelector('.next-btn');
+        const prevBtn = slider.querySelector('.prev-btn');
+        const counter = slider.querySelector('.slide-counter');
+        let currentIndex = 0;
+
+        function updateSlider() {
+            images.forEach((img, index) => {
+                img.classList.toggle('active', index === currentIndex);
+            });
+            counter.textContent = `${currentIndex + 1} / ${images.length}`;
+        }
+
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateSlider();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            updateSlider();
+        });
+    });

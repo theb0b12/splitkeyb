@@ -379,3 +379,100 @@ footer {
     --bg: #5865F2;
     --border: #404EED;
 }
+
+
+/* ---------- Image-Focused Gallery Page ---------- */
+.gallery-minimal-header {
+    background-color: var(--ink);
+    padding: 1rem 1.5rem 1.5rem;
+}
+
+.minimal-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.minimal-card {
+    background: var(--ink);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 0px solid var(--muted-teal);
+    box-shadow: 0 4px 12px rgba(28, 42, 34, 0.08);
+}
+
+.minimal-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+.minimal-caption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 1rem;
+    background: var(--ink);
+    border-top: 0px solid rgba(143, 192, 169, 0.2);
+}
+
+.cap-title {
+    font-family: var(--font-display);
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--eggshell);
+}
+
+.cap-desc {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--muted-teal);
+}
+
+/* ---------- Click-to-Advance Image Slider ---------- */
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: var(--ink);
+    overflow: hidden;
+}
+
+.slider-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.slider-img.active {
+    display: block;
+}
+
+/* Navigation overlay buttons */
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    color: var(--eggshell);
+    border: 0px solid var(--muted-teal);
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 6px;
+}
+
+
+.prev-btn {
+    left: 15px;
+}
+
+.next-btn {
+    right: 15px;
+}
