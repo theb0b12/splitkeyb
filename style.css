@@ -476,3 +476,34 @@ footer {
 .next-btn {
     right: 15px;
 }
+
+/* ---------- Gallery Navigation Link Callout ---------- */
+.gallery-link-wrap {
+    margin-top: 1rem;
+}
+
+.gallery-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-mono);
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--eggshell);
+    background: rgba(143, 192, 169, 0.15);
+    border: 1px solid var(--muted-teal);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.gallery-link:hover {
+    background: var(--coastal-orange);
+    color: var(--ink);
+    border-color: var(--jungle-teal);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(28, 42, 34, 0.15);
+}
