@@ -78,7 +78,7 @@ a { text-decoration: none; color: inherit; }
 /* ---------- Cards ---------- */
 .item-card {
     background: var(--eggshell);
-    border: 0px solid var(--muted-teal);
+
     border-radius: 14px;
     overflow: hidden;
     margin-bottom: 1.5rem;
@@ -247,7 +247,6 @@ footer {
 
 .product {
     background: var(--eggshell);
-    border: 0px solid var(--muted-teal);
     border-radius: 14px;
     overflow: hidden;
     box-shadow: 0 1px 2px rgba(26, 38, 31, 0.06);
@@ -398,7 +397,6 @@ footer {
     background: var(--ink);
     border-radius: 12px;
     overflow: hidden;
-    border: 0px solid var(--muted-teal);
     box-shadow: 0 4px 12px rgba(28, 42, 34, 0.08);
 }
 
@@ -461,7 +459,7 @@ footer {
     transform: translateY(-50%);
     background: transparent;
     color: var(--eggshell);
-    border: 0px solid var(--muted-teal);
+    border: 0px solid var(--muted-teal); /* idk why but this works */
     padding: 0.75rem 1rem;
     cursor: pointer;
     font-size: 14px;
@@ -506,4 +504,89 @@ footer {
     border-color: var(--jungle-teal);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(28, 42, 34, 0.15);
+}
+
+
+/* ---------- Blog Post Layout Styles ---------- */
+.blog-article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+}
+
+.blog-header {
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.blog-header h1 {
+    font-family: var(--font-display);
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--eggshell);
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
+}
+
+.blog-subtitle {
+    font-size: 1.1rem;
+    color: var(--muted-teal);
+    line-height: 1.5;
+}
+
+.blog-slider-container {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+    background: var(--ink);
+    box-shadow: 0 8px 24px rgba(28, 42, 34, 0.2);
+}
+
+
+.blog-content h2 {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    color: var(--eggshell);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    letter-spacing: -0.2px;
+}
+
+.blog-content p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--ink-soft, #d0dcd5);
+    margin-bottom: 1.25rem;
+}
+
+.lead-paragraph {
+    font-size: 1.15rem;
+    color: var(--eggshell);
+    line-height: 1.7;
+}
+
+.blog-specs-list {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--ink-soft, #d0dcd5);
+}
+
+.blog-specs-list li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.inline-link {
+    color: var(--jungle-teal);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.inline-link:hover {
+    color: var(--eggshell);
 }

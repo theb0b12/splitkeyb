@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caeseura Blog - B0b's Keyboard Shop</title>
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+    <div class="shop">
+        <a class="back-link" href="../index">&larr; Back to Shop</a>
+
+        <article class="blog-article">
+            <!-- Article Header -->
+            <header class="blog-header">
+                
+                <h1>Caeseura: Designing a Custom 30% Wireless Split</h1>
+                <p class="blog-subtitle">Building an ultra-compact, open-source row-staggered board from the ground up.</p>
+                <div class="tags" style="margin-bottom: 0.65rem; margin-top: 0.75rem;">
+                    <span class="tag">March 12, 2026</span>
+                    <span class="tag">My First Custom!</span>
+                </div>
+            </header>
+
+            <!-- Featured Image Slider -->
+            <div class="blog-slider-container image-slider">
+                <img src="../photos/gallery-photos/caeseura/IMG_3554-1.jpg" alt="Caeseura view 1" class="slider-img active">
+                <img src="../photos/gallery-photos/caeseura/IMG_3553-1.jpg" alt="Caeseura view 2" class="slider-img" style="object-position: 30% 10%;">
+                <img src="../photos/gallery-photos/caeseura/IMG_3563-1.jpg" alt="Caeseura view 3" class="slider-img">
+                <img src="../photos/IMG_7725.jpeg" alt="Caeseura keyboard" class="slider-img" style="object-position: 0% 20%">
+                
+                <button class="slider-btn prev-btn">&#10094;</button>
+                <button class="slider-btn next-btn">&#10095;</button>
+            </div>
+
+            <!-- Article Body Content -->
+            <div class="blog-content">
+                <p class="lead-paragraph">
+                    The Caeseura is a custom row-staggered 30% split design built completely from scratch by me. My main goal was to squeeze 
+                    daily usability into a minimal footprint without sacrificing wireless capability or switch flexibility. Hence why there is choc v1 and v2, and MX compatiblity built into the pcb.
+                    I also wanted to do something that I had not seen a lot in other's builds, row-staggered-ness.
+                </p>
+
+                <h2>Design Goals & Features</h2>
+                <p>
+                    Designing a board this small comes with unique routing and layout challenges. Here is what ended up in the final specification:
+                </p>
+
+                <ul class="blog-specs-list">
+                    <li><strong>47 Keys:</strong> Carefully optimized layout for maximum layering efficiency.</li>
+                    <li><strong>Split Design:</strong> Ergonomic separation for improved posture.</li>
+                    <li><strong>Dual Switch Compatibility:</strong> Full support for MX & Choc v1/v2 switches.</li>
+                    <li><strong>Wireless:</strong> Clean cable-free desk setup powered by custom firmware.</li>
+                    <li><strong>Open Source:</strong> Fully available for the community to inspect or build.</li>
+                </ul>
+
+                <h2>Open Source Repository</h2>
+                <p>
+                    If you want to look at the routing, check out the source files, or build one for yourself, the complete repository is available on
+                    <a href="https://github.com/theb0b12/caeseura" target="_blank" rel="noopener noreferrer" class="inline-link">GitHub</a>.
+                </p>
+            </div>
+        </article>
+    </div>
+
+    <script src="../app.js"></script>
+
+</body>
+
+</html>

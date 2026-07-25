@@ -131,6 +131,8 @@ document.addEventListener('DOMContentLoaded', () => {
     saveAndRenderCart();
 });
 
+
+// image slider
 document.querySelectorAll('.image-slider').forEach(slider => {
         const images = slider.querySelectorAll('.slider-img');
         const nextBtn = slider.querySelector('.next-btn');
@@ -142,7 +144,6 @@ document.querySelectorAll('.image-slider').forEach(slider => {
             images.forEach((img, index) => {
                 img.classList.toggle('active', index === currentIndex);
             });
-            counter.textContent = `${currentIndex + 1} / ${images.length}`;
         }
 
         nextBtn.addEventListener('click', () => {
