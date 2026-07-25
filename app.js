@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             if (cart.length === 0) return;
 
-            const emailYour = "your-email@example.com"; // Replace with your actual email
+            const emailYour = ""; // Replace with your actual email
             const subject = encodeURIComponent("New Keyboard Shop Order");
             
             let bodyText = "Hey B0b,\n\nI'd like to order the following items from your shop:\n\n";
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
         customInquiryBtn.addEventListener('click', (e) => {
             e.preventDefault();
 
-            const emailYour = "your-email@example.com"; // Replace with your actual email
+            const emailYour = "b0b@theb0b.com";
             const subject = encodeURIComponent("Custom Keyboard Build Inquiry");
             
             let bodyText = "Hey B0b,\n\nI'm interested in a custom keyboard build. Here are some details of what I'm looking for:\n\n";
