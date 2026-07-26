@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             if (cart.length === 0) return;
 
-            const emailYour = ""; // Replace with your actual email
+            const emailYour = "b0b@theb0b.com";
             const subject = encodeURIComponent("New Keyboard Shop Order");
             
             let bodyText = "Hey B0b,\n\nI'd like to order the following items from your shop:\n\n";
