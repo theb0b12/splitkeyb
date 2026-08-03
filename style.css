@@ -30,6 +30,11 @@ body {
 
 a { text-decoration: none; color: inherit; }
 
+.visable-link{
+    text-decoration: underline;
+    color: var(--jungle-teal);
+}
+
 .shop {
     max-width: 680px;
     margin: 0 auto;
