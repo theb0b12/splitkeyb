@@ -562,6 +562,24 @@ footer {
     letter-spacing: -0.2px;
 }
 
+.blog-content h3 {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    color: var(--ink);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    letter-spacing: -0.2px;
+}
+
+.blog-content h4 {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    color: var(--ink-soft);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    letter-spacing: -0.2px;
+}
+
 .blog-content p {
     font-size: 1rem;
     line-height: 1.7;
