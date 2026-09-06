@@ -1,25 +1,25 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B0b's Keyboard Shop</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="shop">
         <header class="shop-header">
             <h1>B0b's Keyboard Shop</h1>
-            <p class="shop-sub">PCBs, pre-builts, and custom commision builds</p>
-            
             <p class="gallery-link-wrap">
                 <a href="gallery" class="gallery-link">View Build Gallery &rarr;</a>
-            </p>            
+            </p>
 
             <div class="cart-container">
                 <p class="cart-info">Cart: <span id="cart-count">0</span> items | Total: $<span id="cart-total">0</span></p>
                 <div class="cart-actions">
-                    <button id="checkout-btn" class="btn-push" style="display: none;">
+                    <button id="checkout-btn" class="btn-push btn-send" style="display: none;">
                         <span>Send Order via Email</span>
                     </button>
                     <button id="clear-cart-btn" class="btn-push btn-clear" style="display: none;">
@@ -31,23 +31,51 @@
 
         <a href="caeseura">
             <div class="item-card">
-                <img class="item-img" src="photos/IMG_7725.jpeg" alt="Caeseura keyboard" style="object-position: 0% 20%";>
+                <img class="item-img" src="photos/IMG_7725.jpeg" alt="Caeseura keyboard" style="object-position: 0% 20%"
+                    ;>
                 <div class="item-body">
                     <div class="item-top">
                         <p class="item-name">Caeseura</p>
                         <div class="item-meta">
                             <p class="item-tag">PCB</p>
-                            
+
                             <p class="item-price">$25</p>
                         </div>
                     </div>
                     <div class="tags">
                         <span class="tag">MX + Choc Hotswap</span>
                         <span class="tag">Row Staggered</span>
-                        <span class="tag">Arrow Keys + Ctrl & Super Built In*</span>
+                        <span class="tag">Split</span>
+                        <span class="tag">Wireless</span>
                     </div>
                     <div class="card-footer">
-                        <button class="btn-push" data-name="Caeseura" data-price="25"><span>Add to cart</span></button>
+                        <button class="btn-push" data-name="Caeseura PCB" data-price="25"><span>Add to cart</span></button>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="ximiv2">
+            <div class="item-card">
+                <img class="item-img" src="photos/gallery-photos/ximi/IMG_3584.JPG" alt="Ximi V2 keyboard"
+                    style="object-position: 0% 80%">
+                <div class="item-body">
+                    <div class="item-top">
+                        <p class="item-name">Ximi V2 Prebuilt</p>
+                        <div class="item-meta">
+                            <p class="item-tag">Prebuilt</p>
+                            <p class="item-price">$150</p>
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Split</span>
+                        <span class="tag">42 keys</span>
+                        <span class="tag">2 Trackballs</span>
+                        <span class="tag">Wired</span>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-push" data-name="Ximi V2 Prebuilt" data-price="150"><span>Add to
+                                cart</span></button>
                     </div>
                 </div>
             </div>
@@ -72,15 +100,17 @@
                     </div>
                     <div class="card-footer">
                         <p class="item-tag">In fabrication, will be avalible soon!</p>
-                        <button class="btn-push" data-name="Good Wings" data-price="45" disabled style="pointer-events: none; opacity: 0.6;"><span><s>Add to cart</s></span></button>
+                        <button class="btn-push" data-name="KLON PCB" data-price="45" disabled
+                            style="pointer-events: none; opacity: 0.6;"><span><s>Add to cart</s></span></button>
                     </div>
                 </div>
             </div>
         </a>
-        
+
         <a href="goodwings">
             <div class="item-card">
-                <img class="item-img" src="photos/IMG_7977.jpeg" alt="Good Wings keyboard" style="object-position: 0% 40%">
+                <img class="item-img" src="photos/IMG_7977.jpeg" alt="Good Wings keyboard"
+                    style="object-position: 0% 40%">
                 <div class="item-body">
                     <div class="item-top">
                         <p class="item-name">Good Wings</p>
@@ -97,7 +127,8 @@
                     </div>
                     <div class="card-footer">
                         <p class="item-tag">In design, will be avalible soon!</p>
-                        <button class="btn-push" data-name="Good Wings" data-price="45" disabled style="pointer-events: none; opacity: 0.6;"><span><s>Add to cart</s></span></button>
+                        <button class="btn-push" data-name="Good Wings PCB" data-price="45" disabled
+                            style="pointer-events: none; opacity: 0.6;"><span><s>Add to cart</s></span></button>
                     </div>
                 </div>
             </div>
@@ -119,17 +150,18 @@
                         <span class="tag">Pretty much anything you can dream!</span>
                     </div>
                     <div class="card-footer">
-                        
+
                         <button class="btn-push"><span>Click for Details</span></button>
                     </div>
                 </div>
             </div>
         </a>
 
-        <footer>* Depending on keymap</footer>
+        <footer>Prices are without shipping, reach out for a shipping quote.</footer>
     </div>
 
-    
+
     <script src="app.js"></script>
 </body>
+
 </html>

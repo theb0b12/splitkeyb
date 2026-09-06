@@ -331,9 +331,9 @@ footer {
 
 /* ---------- Cart & Checkout Section ---------- */
 .cart-container {
-    margin-top: 1.5rem;
+    /* margin-top: 1.5rem; */
     padding-top: 1.25rem;
-    border-top: 2px solid rgba(250, 243, 221, 0.2);
+    /* border-top: 2px solid rgba(250, 243, 221, 0.2); */
     text-align: center;
 }
 
@@ -355,6 +355,12 @@ footer {
 /* Override margin-left: auto so flexbox centering works properly */
 .cart-actions .btn-push {
     margin-left: 0; 
+}
+
+/* Send order button custom color */
+.btn-push.btn-send {
+    --bg: var(--coastal-orange);
+    --border: #b96724;
 }
 
 /* Clear cart button custom color */
@@ -496,7 +502,7 @@ footer {
     text-transform: uppercase;
     letter-spacing: 0.05em;
     color: var(--eggshell);
-    background: rgba(143, 192, 169, 0.15);
+    background: var(--ink-soft);
     border: 1px solid var(--muted-teal);
     padding: 0.5rem 1rem;
     border-radius: 8px;
@@ -505,9 +511,9 @@ footer {
 }
 
 .gallery-link:hover {
-    background: var(--coastal-orange);
-    color: var(--ink);
-    border-color: var(--jungle-teal);
+    background: var(--ink);
+    color: var(--eggshell);
+    border-color: var(--muted-teal);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(28, 42, 34, 0.15);
 }

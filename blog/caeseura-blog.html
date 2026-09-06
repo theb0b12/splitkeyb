@@ -43,49 +43,11 @@
             <!-- Article Body Content -->
             <div class="blog-content">
                 <p class="lead-paragraph">
-                    The Caeseura is a custom row-staggered 30% split design built completely from scratch by me. To be
+                    The Caeseura is a custom row-staggered 30% split design, built completely from scratch by me. To be
                     honest my main goal was just to create a board that worked. I wanted to add
-                    all the cool features... Hence why there is choc v1 and v2, and MX compatiblity, along with the
+                    all the cool features... Hence why there is choc v1 and v2, and MX compatibility, along with the
                     nice!nano v2 as the MCU of choice.
                     I also wanted to do something that I had not seen a lot in other's builds, row-staggered-ness.
-                </p>
-
-
-
-                <p class="lead-paragraph">
-                    I had the idea for Caeseura ever since I built my first split keyb, corne kit from Typeractive <a
-                        href="corne-blog" target="_blank" rel="noopener noreferrer" class="inline-link">(write up
-                        here)</a>.
-                    Coming from an engineering background, and wanting to create something that was truly mine, I set
-                    out in search of help. I found the Ergogen (absolem)
-                    <a href="http://discord.ergogen.xyz/" target="_blank" rel="noopener noreferrer"
-                        class="inline-link">discord</a> a great place to bounce ideas off of people, and
-                    get help when I was stuck. The <a href="https://ergogen.xyz/" target="_blank"
-                        rel="noopener noreferrer" class="inline-link">Ergogen</a> tool was fundamental in creating this
-                    dream of mine, even if it is not
-                    designed for row-staggered keyboards. Sorry for the link spam, but FlatFootFox's <a
-                        href="https://flatfootfox.com/ergogen-part1-units-points/" target="_blank"
-                        rel="noopener noreferrer" class="inline-link">guide</a>
-                    to ergogen was a lifesaver for this project, and to community in general. I would recommend giving
-                    all his keyboard blogs a read, but the ergogen guide series (5ish parts and counting) is really
-                    helpful. Even now, as I
-                    am writing this about a little under a year into the custom ergo keyboard design hobby, I still have
-                    to search through the guides every once in a while. Mainly for yaml syntax things, because with
-                    great power
-                    comes great... debugging strange behaviors.
-
-                    <br>
-                    <br>
-
-                    Some context to where I was at in my engineering journey. I had messed around with CAD software for
-                    basic 3D modeling, but had never made anything to 3D print, or for any functional purposes, where
-                    tolerances and measurements
-                    were a must. So safe to say I was jumping in the deep end, somewhat without any swimming practice.
-                    This is why it took about 3 months for the design to finally come to a point where I was happy with
-                    it enough to send it off
-                    to be fabricated (JLCPCB).
-                    <br>
-
                 </p>
 
                 <p>
@@ -102,17 +64,57 @@
                         kids were doing.</li>
                     <li><strong>Multi Switch Compatibility:</strong> Full support for MX & Choc v1/v2 switches because
                         you never know when you might want to switch it up a little.</li>
-                    <li><strong>Wireless:</strong> I fell in love with the tri-state meta of most full-ish size
+                    <li><strong>Wireless:</strong> I fell in love with the tri-state (wired, 2.4GHz, Bluetooth) meta of
+                        most full-ish size
                         mechanical keybs, and wanted no cables to fluff up my life. Also it made it so I could
                         travel with it easier!</li>
                     <li><strong>Open Source:</strong> Fully available for the anyone, if they were completely out of
                         their mind, to build it themselves.</li>
                 </ul>
 
+                <p class="lead-paragraph">
+                    I had the idea for Caeseura ever since I built my first split keyb, corne kit from Typeractive <a
+                        href="corne-blog" target="_blank" rel="noopener noreferrer" class="inline-link">(write up
+                        here)</a>.
+                    Coming from an engineering background, and wanting to create something that was truly mine, I set
+                    out in search of help. I found the Ergogen (Absolem)
+                    <a href="http://discord.ergogen.xyz/" target="_blank" rel="noopener noreferrer"
+                        class="inline-link">Discord</a> a great place to bounce ideas off of people, and
+                    get help when I was stuck. The <a href="https://ergogen.xyz/" target="_blank"
+                        rel="noopener noreferrer" class="inline-link">Ergogen</a> tool was fundamental in creating this
+                    dream of mine, even if it is not
+                    designed for row-staggered keyboards. FlatFootFox's <a
+                        href="https://flatfootfox.com/ergogen-part1-units-points/" target="_blank"
+                        rel="noopener noreferrer" class="inline-link">guide</a>
+                    to ergogen was a lifesaver for this project, and to community in general. I would recommend giving
+                    all his keyboard blogs a read, but the ergogen guide series (five-ish parts and counting) is really
+                    helpful. Even now, as I
+                    am writing this about a little under a year into the custom ergo keyboard design hobby, I still have
+                    to search through the guides every once in a while. Mainly for yaml syntax things, because with
+                    great power
+                    comes great... debugging strange behaviors.
+
+                    <br>
+                    <br>
+
+                    Some context to where I was at in my engineering journey. I had messed around with CAD software for
+                    basic 3D modeling, but had never made anything to 3D print, or for any functional purposes, where
+                    tolerances and measurements
+                    were a must. So safe to say I was jumping in the deep end, somewhat without any swimming ability.
+                    This is why it took about 3 months for the design to finally come to a point where I was happy with
+                    it enough to send it off to be fabricated by JLCPCB.
+                    <br>
+
+                </p>
+
                 <p>The workflow that I mainly used to get this keyboard off to the printers was, ergogen -> kicad pcb.
                     And then for the firmware
-                    it was Nick Coutso's keymap layout tools (import kicad pcb) -> Genteure's ZMK shield wizard -> Nick
-                    Coutso's keymap editor (links below).
+                    it was Nick Coutso's <a href="https://nickcoutsos.github.io/keymap-layout-tools/"
+                        class="inline-link" target="_blank" rel="noopener">keymap layout tools</a></li> (import kicad
+                    pcb) -> Genteure's <a href="https://shield-wizard.genteure.workers.dev/" class="inline-link"
+                        target="_blank" rel="noopener">ZMK shield wizard</a></li> -> Nick
+                    Coutso's <a href="https://nickcoutsos.github.io/keymap-editor/" class="inline-link" target="_blank"
+                        rel="noopener">keymap editor</a></li>.
                     One of the boards that was helpful for creating the row-staggered design, in ergogen's mainly
                     columnar focused ecosystem, was <a href="https://flatfootfox.com/65-crimes-a-ch559l-fak-keyboard/"
                         class="inline-link" target="_blank" rel="noopener">FFF's 65 Crimes</a>. I may or may not've
@@ -122,29 +124,47 @@
                 <h4>Etymology</h4>
                 <p>
                     An altered spelling of caesura, intentionally adding the "e" as wordplay, referencing the spelling
-                    of the city of Céüse in France, a very cool sport climbing destination and host to some of the hardest 
+                    of the city of Céüse in France, a very cool sport climbing destination and host to some of the
+                    hardest
                     routes in the world (Bibliographie 5.15c/ 9b+).
-                    The sword Caesura from The Kingkiller Chronicles (great books btw). And it is close to the spelling of
-                    a city in the Bible so that helps. The "eur" part is a somewhat contrived splice of the way 
-                    that some french words create a person doing the action out of a verb. For example a runner is "un 
-                    coureur", and the verb to run is "courir". So I thought why not add that to the noun in english "caesura", 
-                    which means a break in prosity. So in its essence, the Proper noun Caeseura <i>could</i> mean, "one who splits".
-                    Which is fitting for a split keyboard... At least I thought so when coming up with the name of the keyboard. Funny
+                    The sword Caesura from The Kingkiller Chronicles (great books btw). And it is close to the spelling
+                    of
+                    a city in the Bible so that helps. The "eur" part is a somewhat contrived splice of the way
+                    that some french words create a person doing the action out of a verb. For example a runner is "un
+                    coureur", and the verb to run is "courir". So I thought why not add that to the noun in english
+                    "caesura",
+                    which means a break in prosity. So in its essence, the Proper noun Caeseura <i>could</i> mean, "one
+                    who splits".
+                    Which is fitting for a split keyboard... At least I thought so when coming up with the name of the
+                    keyboard. Funny
                     enough, no one seems to have as much enthusiasm for the made up word as I do...
                 </p>
 
                 <p>
-                    After I sent off the board to get fabricated by JLCPCB, I had to sit around and contemplate how I got myself into this
-                    ergo mess. Quite quickly I found that I made a PCB design error, and I would have to bodge one of the column wires.
-                    A few mistakes are almost inevitable with your first custom keyboard design, especially if you don't have electrical
-                    engineering (EE) experience, or hate triple checking your work (both for me). The great thing about JLCPCB, other than 
-                    their relatively cheap prices, is that if you choose the slow and cheap shipping option, you get to wait around for 
-                    11-15 days. Which gave me loads of time to spend approximately 1 hour designing a makeshift bottom case, and switch
-                    plate. What can I say... I chose not to be a mechanical engineer for a reason. I like tweaking the same line of code
-                    over and over again to get a slightly different result (thanks ergogen), rather than CADing and actually fabricating
-                    stuff. Although this project has sent me on the path of EE, and dabbling every once in a long while in other fields
+                    After I sent off the board to get fabricated by JLCPCB, I had to sit around and contemplate how I
+                    got myself into this
+                    ergo mess. Quite quickly I found that I made a PCB design error, and I would have to bodge one of
+                    the column wires.
+                    A few mistakes are almost inevitable with your first custom keyboard design, especially if you don't
+                    have electrical
+                    engineering (EE) experience, or hate triple checking your work (both for me). The great thing about
+                    JLCPCB, other than
+                    their relatively cheap prices, is that if you choose the slow and cheap shipping option, you get to
+                    wait around for
+                    11-15 days. Which gave me loads of time to spend approximately 1 hour designing a makeshift bottom
+                    case, and switch
+                    plate. What can I say... I chose not to be a mechanical engineer for a reason. I like tweaking the
+                    same line of codes
+                    over and over again to get a slightly different result (thanks ergogen), rather than CADing and
+                    actually fabricating
+                    stuff. Although this project has sent me on the path of EE, and dabbling every once in a long while
+                    in other fields
                     outside of CS and data science.
                 </p>
+
+                <h4>30%?</h4>
+                <h4>Conclusion</h4>
+
 
                 <h3>Tools & Stuff</h3>
                 <ul class="blog-specs-list">
@@ -186,13 +206,14 @@
                     <a href="https://github.com/theb0b12/caeseura" target="_blank" rel="noopener noreferrer"
                         class="inline-link">GitHub</a>.
                     This project is open source with the AGPLv3 license. PCB design files, case files, and ZMK config
-                    are free to use, modify, and build from. If you make changes and share them, a link back here would be
+                    are free to use, modify, and build from. If you make changes and share them, a link back here would
+                    be
                     appreciated.
                 </p>
             </div>
         </article>
         <footer>
-            Idk what to put here. :wave
+            idk what to put here. :wave
         </footer>
     </div>
 
