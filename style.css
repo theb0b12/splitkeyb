@@ -15,7 +15,9 @@
     --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -28,9 +30,12 @@ body {
     padding: 2rem 1rem 4rem;
 }
 
-a { text-decoration: none; color: inherit; }
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
-.visible-link{
+.visible-link {
     text-decoration: underline;
     color: var(--jungle-teal);
 }
@@ -96,7 +101,7 @@ a:has(> .item-card),
 }
 
 .item-card:has(a:hover),
-a:hover > .item-card {
+a:hover>.item-card {
     transform: translateY(-3px);
     box-shadow: 0 10px 24px rgba(26, 38, 31, 0.14);
 }
@@ -221,8 +226,13 @@ footer {
     transition: transform 0.1s ease;
 }
 
-.btn-push:hover span { transform: translateY(calc(-1 * var(--depth) - 2px)); }
-.btn-push:active span { transform: translateY(0); }
+.btn-push:hover span {
+    transform: translateY(calc(-1 * var(--depth) - 2px));
+}
+
+.btn-push:active span {
+    transform: translateY(0);
+}
 
 .card-footer {
     display: flex;
@@ -247,7 +257,9 @@ footer {
     margin-bottom: 1.25rem;
 }
 
-.back-link:hover { text-decoration: underline; }
+.back-link:hover {
+    text-decoration: underline;
+}
 
 .product {
     background: var(--eggshell);
@@ -353,7 +365,7 @@ footer {
 
 /* Override margin-left: auto so flexbox centering works properly */
 .cart-actions .btn-push {
-    margin-left: 0; 
+    margin-left: 0;
 }
 
 /* Send order button custom color */
@@ -470,7 +482,8 @@ footer {
     transform: translateY(-50%);
     background: transparent;
     color: var(--eggshell);
-    border: 0px solid var(--muted-teal); /* idk why but this works */
+    border: 0px solid var(--muted-teal);
+    /* idk why but this works */
     padding: 0.75rem 1rem;
     cursor: pointer;
     font-size: 14px;
