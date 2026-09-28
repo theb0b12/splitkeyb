@@ -49,7 +49,6 @@ a { text-decoration: none; color: inherit; }
     margin-bottom: 2.5rem;
     padding: 2.25rem 1.5rem 1.75rem;
     background-color: var(--jungle-teal);
-    background-image: radial-gradient(rgba(250, 243, 221, 0.18) 1.5px, transparent 1.5px);
     background-size: 18px 18px;
 }
 
