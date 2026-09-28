@@ -2,9 +2,6 @@
 
 - [ ] add 4ourty to pcbs to be bought
 - [ ] add pcb pictures of the real pcbs to the ones that need it
-  - [ ] klon
-  - [ ] caeseura
-  - [ ] 4ourty
   - [ ] numpad
 ---
 - [ ] write blogs
