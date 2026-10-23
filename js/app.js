@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const emailYour = "b0b@theb0b.com";
             const subject = encodeURIComponent("New Keyboard Shop Order");
 
-            let bodyText = "Hey B0b,\n\nI'd like to order the following items from your shop:\n\n";
+            let bodyText = "Hey b0b,\n\nI'd like to order the following items from your shop:\n\n";
 
             cart.forEach(item => {
                 bodyText += `- ${item.name} x${item.quantity} ($${item.price * item.quantity})\n`;
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const emailYour = "b0b@theb0b.com";
             const subject = encodeURIComponent("Custom Keyboard Build Inquiry");
 
-            let bodyText = "Hey B0b,\n\nI'm interested in a custom keyboard build. Here are some details of what I'm looking for:\n\n";
+            let bodyText = "Hey b0b,\n\nI'm interested in a custom keyboard build. Here are some details of what I'm looking for:\n\n";
             bodyText += "- Layout / Form factor:\n";
             bodyText += "- Wireless or Wired:\n";
             bodyText += "- Switches / Keycaps preference:\n";
@@ -161,8 +161,6 @@ document.querySelectorAll('.image-slider').forEach(slider => {
 document.querySelectorAll('.slider-btn').forEach(button => {
     button.addEventListener('click', (e) => {
         e.preventDefault();
-        e.stopPropagation(); // Stops the click from opening the card link!
-
-        // Your slider toggle logic here...
+        e.stopPropagation();
     });
 });
