@@ -634,7 +634,8 @@ footer {
 }
 
 .blog-image-wrap {
-    margin-bottom: 2rem; /* Spacing after the whole group */
+    margin-bottom: 2rem;
+    /* Spacing after the whole group */
 }
 
 .blog-image-wrap img {
@@ -649,7 +650,8 @@ footer {
     font-size: 0.85rem;
     line-height: 1.4;
     color: var(--ink-soft);
-    margin-top: 0.4rem; /* Sits right under the photo */
+    margin-top: 0.4rem;
+    /* Sits right under the photo */
     text-align: center;
 }
 
@@ -679,4 +681,35 @@ a.card-link {
 /* Ensure slider controls sit above the card link overlay */
 .slider-btn {
     z-index: 10;
+}
+
+/* ---------- Simple Text Stats List ---------- */
+.blog-simple-stats {
+    list-style: none;
+    margin: 1rem 0 1.5rem 0;
+    padding-left: 0;
+}
+
+.blog-simple-stats li {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--ink-soft, #d0dcd5);
+    margin-bottom: 0.4rem;
+    padding-left: 1.25em;
+    position: relative;
+}
+
+/* Bullet icon matching your specs list */
+.blog-simple-stats li::before {
+    content: "- ";
+    position: absolute;
+    left: 0;
+    color: var(--jungle-teal);
+}
+
+.blog-simple-stats .stat-key {
+    font-family: var(--font-mono);
+    font-size: 0.95rem;
+    color: var(--ink);
+    font-weight: 600;
 }

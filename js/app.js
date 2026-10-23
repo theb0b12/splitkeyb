@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         button.addEventListener('click', (e) => {
             e.preventDefault();
-            
+
             const name = button.getAttribute('data-name');
             const price = parseFloat(button.getAttribute('data-price'));
 
@@ -78,9 +78,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const emailYour = "b0b@theb0b.com";
             const subject = encodeURIComponent("New Keyboard Shop Order");
-            
+
             let bodyText = "Hey B0b,\n\nI'd like to order the following items from your shop:\n\n";
-            
+
             cart.forEach(item => {
                 bodyText += `- ${item.name} x${item.quantity} ($${item.price * item.quantity})\n`;
             });
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
             bodyText += `\nTotal: $${totalPrice}\n\nThanks!`;
 
             const mailtoLink = `mailto:${emailYour}?subject=${subject}&body=${encodeURIComponent(bodyText)}`;
-            
+
             const tempLink = document.createElement('a');
             tempLink.href = mailtoLink;
             tempLink.target = '_blank';
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const emailYour = "b0b@theb0b.com";
             const subject = encodeURIComponent("Custom Keyboard Build Inquiry");
-            
+
             let bodyText = "Hey B0b,\n\nI'm interested in a custom keyboard build. Here are some details of what I'm looking for:\n\n";
             bodyText += "- Layout / Form factor:\n";
             bodyText += "- Wireless or Wired:\n";
@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
             bodyText += "Thanks!";
 
             const mailtoLink = `mailto:${emailYour}?subject=${subject}&body=${encodeURIComponent(bodyText)}`;
-            
+
             const tempLink = document.createElement('a');
             tempLink.href = mailtoLink;
             tempLink.target = '_blank';
@@ -134,35 +134,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // image slider
 document.querySelectorAll('.image-slider').forEach(slider => {
-        const images = slider.querySelectorAll('.slider-img');
-        const nextBtn = slider.querySelector('.next-btn');
-        const prevBtn = slider.querySelector('.prev-btn');
-        const counter = slider.querySelector('.slide-counter');
-        let currentIndex = 0;
+    const images = slider.querySelectorAll('.slider-img');
+    const nextBtn = slider.querySelector('.next-btn');
+    const prevBtn = slider.querySelector('.prev-btn');
+    const counter = slider.querySelector('.slide-counter');
+    let currentIndex = 0;
 
-        function updateSlider() {
-            images.forEach((img, index) => {
-                img.classList.toggle('active', index === currentIndex);
-            });
-        }
-
-        nextBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % images.length;
-            updateSlider();
+    function updateSlider() {
+        images.forEach((img, index) => {
+            img.classList.toggle('active', index === currentIndex);
         });
+    }
 
-        prevBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + images.length) % images.length;
-            updateSlider();
-        });
+    nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateSlider();
     });
+
+    prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        updateSlider();
+    });
+});
 
 
 document.querySelectorAll('.slider-btn').forEach(button => {
     button.addEventListener('click', (e) => {
         e.preventDefault();
         e.stopPropagation(); // Stops the click from opening the card link!
-        
+
         // Your slider toggle logic here...
     });
 });
