@@ -156,3 +156,13 @@ document.querySelectorAll('.image-slider').forEach(slider => {
             updateSlider();
         });
     });
+
+
+document.querySelectorAll('.slider-btn').forEach(button => {
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation(); // Stops the click from opening the card link!
+        
+        // Your slider toggle logic here...
+    });
+});
